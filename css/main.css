@@ -1,0 +1,213 @@
+:root{
+    --violet: rgb(147, 68, 255);
+    --text-color: rgb(98, 98, 98);
+}
+
+@font-face{
+    font-family: "Helvetica";
+    src: url(/fonts/HelveticaNeueCyr-Bold.otf);
+    font-style: normal;
+}
+@font-face{
+    font-family: "Helvetica-Roman";
+    src: url(/fonts/HelveticaNeueCyr-Roman.otf);
+    font-style: normal;
+}
+
+body{
+    font-family: "Helvetica";
+}
+header{
+    min-height: 600px;
+}
+
+.bg{
+    background: 
+        linear-gradient(
+            rgba(255, 255, 255, 0.5), 
+            rgba(255, 255, 255, 0.5)
+        ),
+        url("/img/header_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbo-block{
+    text-align: center;
+    padding-top: 12em;
+}
+
+.jumbo-block > h1 {
+    font-size: 4rem;
+    font-family: "Helvetica";
+    color: rgb(140, 67, 245);
+    font-weight: bold;
+    line-height: 1.2;
+}
+@media (max-width: 768px){
+    .jumbo-block {
+        padding-top: 6em;
+    }
+}
+
+@media (max-width: 350px){
+    .jumbo-block > h1 {
+        font-size: 3rem;
+    }
+}
+
+.jumbo-block > p,
+.section-b > p {
+    font-family: "Helvetica-Roman";
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(98, 98, 98);
+    line-height: 1.2;
+}
+
+.btn {
+    height: 50px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 33px 0px rgba(0, 147, 255, 0.45);
+    background-color: rgba(0, 147, 255);
+    border: none;
+    color: white;
+    margin-top: 90px;
+    font-family: "Helvetica-Roman";   
+}
+
+@media (max-width: 320px ){
+    .btn{
+        width: 210px;
+    }
+}
+
+.section-a > h2,
+.section-b > h2,
+.section-c > h2{
+    font-size: 28px;
+    font-family: "Helvetica";
+    color: rgb(140, 67, 245);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.section-b > h2{
+    margin-bottom: 0.5em;
+}
+
+.image-box > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    -webkit-box-shadow: 30px 33px 0px 1px var(--violet);
+    -moz-box-shadow: 30px 33px 0px 1px var(--violet);
+    box-shadow: 30px 33px 0px 1px var(--violet);
+}
+
+@media  (max-width: 768px){
+    .image-box > img{
+        -webkit-box-shadow: 5px 5px 0px 1px var(--violet);
+        -moz-box-shadow: 5px 5px 0px 1px var(--violet);
+        box-shadow: 5px 5px 0px 1px var(--violet);    
+    }
+}
+
+@media  (max-width: 1080px){
+    .image-box > img{
+        -webkit-box-shadow: 13px 10px 0px 1px var(--violet);
+        -moz-box-shadow: 13px 10px 0px 1px var(--violet);
+        box-shadow: 13px 10px 0px 1px var(--violet);    
+    }
+}
+
+.list{
+    display: block;
+    font-family: "Helvetica-Roman";
+    font-size: 16px;
+    margin-top: 1.5em;
+    padding-left: 70px;  
+    color: #626262;
+}
+
+@media (max-width: 768px){
+    .list {
+        padding-left: 20px;
+    }
+}
+
+.number-list{
+    border-radius: 50%;
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    padding: 3px;
+    font-size: 36px;
+    text-align: center;
+    background: var(--violet);
+    color: white;
+}
+.list > p {
+    padding-left: 80px;
+    padding-top: 13px;
+}
+
+.cart{
+    font-family: "Helvetica-Roman";
+    border-radius: 4px;
+    max-height: 300px;
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+    color: var(--text-color);
+    -webkit-box-shadow: 0px 0px 23px 4px rgba(0,0,0,0.41);
+    -moz-box-shadow: 0px 0px 23px 4px rgba(0,0,0,0.41);
+    box-shadow: 0px 0px 23px 4px rgba(0,0,0,0.41);
+}
+
+.cart > img {
+    margin-bottom: 30px;
+}
+
+.oculus-block > img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.listing{
+    font-family: "Helvetica-Roman";
+    color: var(--text-color);
+}
+
+.listing > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.listing > ul > li {
+    padding-left: 16px;
+    padding-bottom: 16px;
+}
+
+.listing > ul > li:before {
+    content: "•"; 
+    padding-right: 8px;
+    color: var(--violet);
+}
+
+footer{
+    background-color: var(--violet);
+}
+
+.footer-info{
+    font-family: "Helvetica-Roman";
+    text-align: center;
+    margin: 2em 0;
+    color: white;
+}
